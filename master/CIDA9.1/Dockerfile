@@ -37,9 +37,7 @@ RUN luarocks install env
 RUN luarocks install luafilesystem   
 
 # 3. ------------ Build and install Torch7  ------------------
-
-ENV TORCH_NVCC_FLAGS="-D__CUDA_NO_HALF_OPERATORS__"
-   
+  
 RUN cd / && \
     git clone https://github.com/torch/distro.git /torch --recursive && \
     cd /torch && \
