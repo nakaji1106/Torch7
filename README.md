@@ -1,6 +1,6 @@
 # Torch7 Dockerfile for ppc64le
 
-以下のDockerhubにおけるイメージのDockerfileを公開しております。
+DockerイメージのDockerfileを公開しております。
 ppc64leアーキテクチャにおけるDockerコンテナ作成時にご活用ください。
 
 ```
