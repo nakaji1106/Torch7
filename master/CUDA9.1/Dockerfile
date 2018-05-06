@@ -23,7 +23,7 @@ RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 11
 # 1. ------------ install package torch required  ------------------ 
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
-    libzmq3-dev libssl-dev python-zmq luarocks && \
+    libzmq3-dev libssl-dev python-zmq luarocks libopenblas-base libopenblas-dev && \
     apt-get clean
    
 RUN DEBIAN_FRONTEND=noninteractive apt-get upgrade -y && \
